@@ -1,0 +1,76 @@
+/* Login Page Styling */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  color: #333;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-form .btn {
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login-form .btn:hover {
+  background-color: #e32e2e;
+}
+
+.login-form .info-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-form a {
+  color: #ff3c3c;
+  text-decoration: none;
+}
+
+.error-msg {
+  background-color: #ffe0e0;
+  color: #cc0000;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.success-msg {
+  background-color: #e0ffe0;
+  color: #006600;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}

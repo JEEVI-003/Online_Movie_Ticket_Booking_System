@@ -1,0 +1,91 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: #f90;
+}
+
+.seat-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.seat {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  background-color: #444;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.seat input[type="checkbox"] {
+  display: none;
+}
+
+.seat.selected,
+.seat input:checked + label {
+  background-color: #f90;
+}
+
+.seat label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-weight: bold;
+}
+
+form {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  background-color: #f90;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+.message {
+  text-align: center;
+  color: lightgreen;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.seat.booked {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.seat.booked label {
+  color: #ddd;
+}
+
+@media (max-width: 600px) {
+  .seat-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
